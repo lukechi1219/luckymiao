@@ -1,0 +1,37 @@
+
+img {
+    max-width: 580px;
+    height: auto;
+}
+
+div {
+    margin: 10px auto;
+}
+
+.bLcuGT {
+    height: calc(var(--vh, 1vh) * 100);
+    z-index: -1;
+    position: fixed;
+    background-size: contain;
+    inset: 0px;
+}
+
+@media screen and (min-width: 767px) {
+    .bLcuGT {
+        background-image: url(./images/background-desktop.png);
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .bLcuGT {
+        background-image: url(./images/background-mobile.png);
+    }
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
